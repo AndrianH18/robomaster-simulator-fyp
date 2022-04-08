@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="rviz"                      default="true"/>
+  <arg name="use_sim_time"              default="true" />
+  <arg name="gui"                       default="true" />
+  <arg name="headless"                  default="false" />
+  <arg name="world_name"                default="$(find rm_simulator)/worlds/2022.world"/>
+
+  <!-- Configuration of Jackal which you would like to simulate.
+       See jackal_description for details. -->
+  <arg name="config"  default="empty" />
+  <arg name="ns0"     default="jackal0" />
+  <arg name="ns1"     default="jackal1" />
+  <arg name="ns2"     default="jackal2" />
+  <arg name="ns3"     default="jackal3" />
+
+  <!-- <arg name="config" default="custom" /> -->
+
+  <!-- Launch Gazebo with the specified world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="debug" value="0" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="use_sim_time" value="$(arg use_sim_time)" />
+    <arg name="headless" value="$(arg headless)" />
+    <arg name="world_name" value="$(arg world_name)" />
+  </include>
+
+   <node name="map_server" pkg="map_server" type="map_server" args="$(find rm_simulator)/maps/map2020.yaml">
+   </node>
+
+    <include file="$(find rm_simulator)/launch/one_ridgeback.launch">
+      <arg name="init_a"                  value="0"/>
+      <arg name="init_x"                  value="0.5"/>
+      <arg name="init_y"                  value="0.46"/>
+      <arg name="robot_name"              value="$(arg ns0)" />
+      <arg name="ns"                      value="$(arg ns0)" />
+      <arg name="config"                  value="our_side" />
+      <arg name="node_namespace" 	  value="jackal0"/>
+    </include>
+
+    <include file="$(find rm_simulator)/launch/one_ridgeback.launch">
+      <arg name="init_a"                  value="0"/>
+      <arg name="init_x"                  value="0.5"/>
+      <arg name="init_y"                  value="4.02"/>
+      <arg name="robot_name"              value="$(arg ns1)" />
+      <arg name="ns"                      value="$(arg ns1)" />
+      <arg name="config"                  value="our_side" />
+      <arg name="node_namespace" 	  value="jackal1"/>
+    </include>
+
+  <include file="$(find rm_simulator)/launch/one_ridgeback.launch">
+    <arg name="init_a"                    value="3.14"/>
+    <arg name="init_x"                    value="7.58"/>
+    <arg name="init_y"                    value="4.02"/>
+    <arg name="robot_name"                value="$(arg ns2)" />
+    <arg name="ns"                        value="$(arg ns2)" />
+    <arg name="config"                    value="enemy_side" />
+    <arg name="node_namespace" 	  	  value="jackal2"/>
+  </include>
+
+
+  <include file="$(find rm_simulator)/launch/one_ridgeback.launch">
+    <arg name="init_a"                    value="3.14"/>
+    <arg name="init_x"                    value="7.58"/>
+    <arg name="init_y"                    value="0.46"/>
+    <arg name="robot_name"                value="$(arg ns3)" />
+    <arg name="ns"                        value="$(arg ns3)" />
+    <arg name="config"                    value="enemy_side" />
+    <arg name="node_namespace" 	  	  value="jackal3"/>
+  </include>
+
+  <node name="simulate_refer_system" pkg="rm_simulator" type="simulate_refer_system" respawn="false" output="screen"/>
+| 
+    <include file="$(find realsense2_description)/launch/view_d435_model_rviz_gazebo.launch">
+    <arg name="x"                        value="0.02"/>
+    <arg name="y"                        value="0.02"/>
+    <arg name="z"                        value="1.78"/>
+    <arg name="yaw"                      value="0.5"/>
+    <arg name="ns"                       value="cam0"/>
+  </include>
+  
+  <include file="$(find realsense2_description)/launch/view_d435_model_rviz_gazebo.launch">
+    <arg name="x"                        value="0.02"/>
+    <arg name="y"                        value="4.46"/>
+    <arg name="z"                        value="1.78"/>
+    <arg name="yaw"                      value="-0.5"/>
+    <arg name="ns"                       value="cam1"/>
+  </include>
+
+  <include file="$(find realsense2_description)/launch/view_d435_model_rviz_gazebo.launch">
+    <arg name="x"                        value="8.06"/>
+    <arg name="y"                        value="4.46"/>
+    <arg name="z"                        value="1.78"/>
+    <arg name="yaw"                      value="3.64"/>
+    <arg name="ns"                       value="cam2"/>
+  </include>
+
+  <include file="$(find realsense2_description)/launch/view_d435_model_rviz_gazebo.launch">
+    <arg name="x"                        value="8.06"/>
+    <arg name="y"                        value="0.02"/>
+    <arg name="z"                        value="1.78"/>
+    <arg name="yaw"                      value="-3.64"/>
+    <arg name="ns"                       value="cam3"/>
+  </include>
+
+
+  <!-- View in RVIZ. -->
+  <group if="$(arg rviz)">
+    <node name="ridgeback_viz_$(arg ns0)" pkg="rviz" type="rviz" args="-d $(find rm_simulator)/rviz/ridgeback_viz.rviz">
+      <remap from="/$(arg ns0)/goal" to="/$(arg ns0)/move_base_simple/goal"/>
+      <remap from="/$(arg ns1)/goal" to="/$(arg ns1)/move_base_simple/goal"/>
+      <remap from="/$(arg ns2)/goal" to="/$(arg ns2)/move_base_simple/goal"/>
+      <remap from="/$(arg ns3)/goal" to="/$(arg ns3)/move_base_simple/goal"/>
+    </node>
+  </group>
+
+<!-- <node name="collision_detector" pkg="particle_shooter" type="collision_detector" output="screen"/> -->
+<!--
+
+  <group ns="camera1">
+  <node pkg="tf" type="static_transform_publisher" name="camera_broadcaster"
+      args="0 0 1.28 -1.15 0 -1.8 map camera1 10" />
+  <node name="camera_info" pkg="rostopic" type="rostopic"
+      args="pub camera_info sensor_msgs/CameraInfo
+     '{header: {seq: 0, stamp: {secs: 0, nsecs: 0}, frame_id: 'camera1'},
+      height: 480, width: 640, distortion_model: 'plumb_bob',
+      D: [0],
+      K: [500.0, 0.0, 320, 0.0, 500.0, 240.0, 0.0, 0.0, 1.0],
+      R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0],
+      P: [500.0, 0.0, 320, 0.0, 0.0, 500, 240, 0.0, 0.0, 0.0, 1.0, 0.0],
+      binning_x: 0, binning_y: 0,
+      roi: {x_offset: 0, y_offset: 0, height: 480, width: 640, do_rectify: true}}' -r 2"
+      output="screen"/>
+  </group>
+  
+  <group ns="rviz1/camera1/image">
+  <rosparam param="disable_pub_plugins">
+    - 'image_transport/compressed'
+    - 'image_transport/compressedDepth'
+    - 'image_transport/theora'
+  </rosparam>
+  </group>
+
+-->
+</launch>

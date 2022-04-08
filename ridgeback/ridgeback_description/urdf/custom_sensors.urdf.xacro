@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- This file is a placeholder which is included by default from
+       ridgeback.urdf.xacro. If a robot is being customized and requires
+       additional URDF, set the RIDGEBACK_URDF_EXTRAS environment variable
+       to the full path of the file you would like included. -->
+
+  <xacro:property name="M_PI" value="3.1415926535897931" />
+
+  <xacro:include filename="$(find lms1xx)/urdf/sick_lms1xx.urdf.xacro" />
+
+
+  <xacro:macro name="sick_lms1xx_mount" params="prefix topic location">
+
+    <xacro:sick_lms1xx frame="${prefix}_laser" topic="${topic}" update_rate="20"
+                       min_angle="-${M_PI}" max_angle="${M_PI}"
+                       min_range="0.45" robot_namespace="$(arg namespace)" />
+
+    <joint name="${prefix}_laser_joint" type="fixed">
+      <!-- This offset is from the base of the bracket to the LIDAR's focal point. -->
+      <origin xyz="${location * 0.3999} 0 0.3" rpy="0 0 0" />
+      <parent link="chassis_link" />
+      <child link="${prefix}_laser" />
+    </joint>
+
+  </xacro:macro>
+
+  <xacro:sick_lms1xx_mount prefix="center"
+                             topic="scan"
+                             location="0" />
+
+  
+  <xacro:include filename="accessories/camera_mount.urdf.xacro" />
+  <!-- <xacro:include filename="$(find pointgrey_camera_description)/urdf/pointgrey_flea3.urdf.xacro" /> -->
+  <xacro:include filename="$(find realsense2_description)/urdf/_d435.urdf.xacro" />
+
+    <camera_mount prefix="front"
+                       tilt="0"/>
+    <joint name="front_camera_mount_joint" type="fixed">
+      <origin xyz="-0.13 -0.01 0.22"
+              rpy=" 0 0 0" />
+      <parent link="front_cover_link" />
+      <child link="front_camera_mount" />
+    </joint>
+    
+<!--     
+    <pointgrey_flea3 frame="front_camera" name="front"
+      camera_x="0.0754" camera_y="0.029" camera_z="0.035"
+      camera_mass="0.98307" hfov="1.0471975512" fps="60" width="640" height="512"/> -->
+   
+    <link name="front_camera">
+      <inertial>
+        <mass value="0.98307" />
+      <inertia
+          ixx="0.0072228"
+          ixy="1.8624E-07"
+          ixz="5.1373E-07"
+          iyy="0.0035103"
+          iyz="-0.0016193"
+          izz="0.00443" />
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0.1" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://ridgeback_description/meshes/gun_new.STL"/>
+        </geometry>
+        <material name="Black">
+          <color rgba="0.15 0.15 0.15 1.0"/>
+        </material>
+      </visual>
+    </link>
+
+
+    <gazebo reference="front_camera">
+      <material>Gazebo/DarkGrey</material>
+    </gazebo>
+    <link name="realsense_mount"/>
+    <joint name="realsense_mount_joint" type="fixed">
+      <origin xyz="0.03 0.0 0.02" rpy="0 0 0" />
+      <parent link="front_turret" />
+      <child link="realsense_mount" /> 
+    </joint>
+    
+    <!-- <sensor_d435 parent="realsense_mount" name="$(arg namespace)_robot_camera" topics_ns="$(arg namespace)">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </sensor_d435> -->
+
+    <joint name="front_camera_bracket_joint" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <parent link="front_camera_beam" />
+      <child link="front_camera" />
+    </joint>
+
+  <link name="camera_visualtag">
+  </link>
+
+  <joint name="visualtag_joint" type="fixed">
+    <origin xyz="0 0 0"
+            rpy="-1.57 0 -1.57" />
+    <parent link="front_camera" />
+    <child link="camera_visualtag" />
+  </joint>
+  
+
+
+</robot>

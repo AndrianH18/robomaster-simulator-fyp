@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+	<node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop" output="screen" ns = "jackal0"/>
+
+</launch>

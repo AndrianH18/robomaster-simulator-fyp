@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="fyp_rl" type="start_training.py" name="start_training" respawn="false" required="true" output="screen"/>
+  <rosparam file="$(find fyp_rl)/config/robot_init.yaml" command="load" ns="/train_rl"/>
+
+  <node pkg="fyp_rl" type="bullet_tf_broadcaster" name="bullet_tf_broadcaster" required="true" output="screen"/>
+
+</launch>

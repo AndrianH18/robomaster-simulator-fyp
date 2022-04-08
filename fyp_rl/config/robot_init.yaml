@@ -1,0 +1,19 @@
+# TRAINING CONFIGURATION
+
+###### jackal0: agent/shooter robot, always stationary ######
+jackal0:
+  x: 0.5   # Only applies if randomize_pos is false
+  y: 2.2   # Only applies if randomize_pos is false
+  yaw: 0
+  randomize_pos: true         # spawn at random position at the start of each episode
+  rand_x_bounds: [1.5, 4.1]   # [lower_bound, upper_bound]
+  rand_y_bounds: [0.6, 3.9]
+
+###### jackal1: target robot, always spawns to the same coordinate but can move ######
+jackal1:
+  x: 6.4
+  y: 2.25
+  yaw: 3.141593
+  move: true    # Whether the robot moves (translate)
+  vx_limit: 0
+  vy_limit: 1.0

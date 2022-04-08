@@ -1,0 +1,2530 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Image11
+        - /RobotModel-robo11/Links1
+        - /Image1
+        - /Image1/Status1
+        - /Obstacles1
+        - /Obstacles2
+        - /TF1
+      Splitter Ratio: 0.505330502986908
+    Tree Height: 383
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: LaserScan
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /jackal0/color/image_raw
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image1
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.30000001192092896
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: PoseArray
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /jackal0/particlecloud
+      Unreliable: false
+      Value: false
+    - Alpha: 0.699999988079071
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic: /map
+      Unreliable: false
+      Use Timestamp: false
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 0.30000001192092896
+        Min Value: 0.30000001192092896
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 255; 255; 255
+      Color Transformer: AxisColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: LaserScan
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.10000000149011612
+      Style: Flat Squares
+      Topic: /jackal0/scan
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 0.30000001192092896
+        Min Value: 0.30000001192092896
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/LaserScan
+      Color: 16; 160; 255
+      Color Transformer: FlatColor
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Min Color: 0; 0; 0
+      Name: LaserScan
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.10000000149011612
+      Style: Flat Squares
+      Topic: /jackal1/scan
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        axle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        back_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_visualtag:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        center_laser:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        chassis_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_camera_beam:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_camera_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_lights_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_rocker_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal0_robot_camera_bottom_screw_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal0_robot_camera_color_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal0_robot_camera_color_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal0_robot_camera_depth_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal0_robot_camera_depth_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal0_robot_camera_left_ir_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal0_robot_camera_left_ir_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal0_robot_camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        jackal0_robot_camera_right_ir_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal0_robot_camera_right_ir_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_side_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        mid_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_lights_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_rocker_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_side_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        top_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel-robot0
+      Robot Description: jackal0/robot_description
+      TF Prefix: jackal0
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Alpha: 0.699999988079071
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic: /jackal0/global_costmap/global_costmap/costmap
+      Unreliable: false
+      Use Timestamp: false
+      Value: true
+    - Alpha: 0.699999988079071
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: true
+      Name: Map
+      Topic: /jackal0/local_costmap/local_costmap/costmap
+      Unreliable: false
+      Use Timestamp: false
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 26; 37; 255
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /jackal0/local_planner_node/trajectory
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /jackal0/global_planner_node/path
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        axle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        back_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_visualtag:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        center_laser:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        chassis_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_camera_beam:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_camera_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_lights_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_rocker_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal1_robot_camera_bottom_screw_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal1_robot_camera_color_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal1_robot_camera_color_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal1_robot_camera_depth_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal1_robot_camera_depth_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal1_robot_camera_left_ir_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal1_robot_camera_left_ir_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal1_robot_camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        jackal1_robot_camera_right_ir_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal1_robot_camera_right_ir_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_side_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        mid_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_lights_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_rocker_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_side_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        top_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel-robo1
+      Robot Description: jackal1/robot_description
+      TF Prefix: jackal1
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Alpha: 0.699999988079071
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: false
+      Name: Map
+      Topic: /jackal1/global_costmap/global_costmap/costmap
+      Unreliable: false
+      Use Timestamp: false
+      Value: false
+    - Alpha: 0.699999988079071
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: false
+      Name: Map
+      Topic: /jackal1/local_costmap/local_costmap/costmap
+      Unreliable: false
+      Use Timestamp: false
+      Value: false
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /jackal1/global_planner_node/path
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 255; 25; 129
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /jackal1/local_planner_node/trajectory
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        axle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        back_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_visualtag:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        center_laser:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        chassis_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_camera_beam:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_camera_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_lights_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_rocker_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal2_robot_camera_bottom_screw_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal2_robot_camera_color_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal2_robot_camera_color_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal2_robot_camera_depth_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal2_robot_camera_depth_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal2_robot_camera_left_ir_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal2_robot_camera_left_ir_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal2_robot_camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        jackal2_robot_camera_right_ir_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal2_robot_camera_right_ir_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_side_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mid_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_lights_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_rocker_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_side_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        top_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel-robo2
+      Robot Description: /jackal2/robot_description
+      TF Prefix: jackal2
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /jackal2/global_planner_node/path
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 255; 42; 152
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /jackal2/local_planner_node/trajectory
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        axle_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        back_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        camera_visualtag:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        center_laser:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        chassis_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_camera_beam:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_camera_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_lights_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        front_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        front_rocker_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        imu_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal3_robot_camera_bottom_screw_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal3_robot_camera_color_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal3_robot_camera_color_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal3_robot_camera_depth_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal3_robot_camera_depth_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal3_robot_camera_left_ir_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal3_robot_camera_left_ir_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal3_robot_camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        jackal3_robot_camera_right_ir_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        jackal3_robot_camera_right_ir_optical_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        left_side_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        mid_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_left_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_lights_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rear_right_wheel_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        rear_rocker_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_armor_sensor:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        right_side_cover_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        top_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Name: RobotModel-robo3
+      Robot Description: /jackal3/robot_description
+      TF Prefix: jackal3
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /jackal3/global_planner_node/path
+      Unreliable: false
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 255; 42; 152
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Lines
+      Line Width: 0.029999999329447746
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /jackal3/local_planner_node/trajectory
+      Unreliable: false
+      Value: true
+    - Angle Tolerance: 0.10000000149011612
+      Class: rviz/Odometry
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 0.30000001192092896
+          Color: 204; 51; 204
+          Scale: 1
+          Value: true
+        Value: false
+      Enabled: false
+      Keep: 100
+      Name: Odometry
+      Position Tolerance: 0.10000000149011612
+      Shape:
+        Alpha: 1
+        Axes Length: 1
+        Axes Radius: 0.10000000149011612
+        Color: 255; 25; 0
+        Head Length: 0.30000001192092896
+        Head Radius: 0.10000000149011612
+        Shaft Length: 1
+        Shaft Radius: 0.05000000074505806
+        Value: Arrow
+      Topic: /odometry/filtered
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Axes Length: 1
+      Axes Radius: 0.10000000149011612
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.30000001192092896
+      Head Radius: 0.10000000149011612
+      Name: Pose
+      Shaft Length: 1
+      Shaft Radius: 0.05000000074505806
+      Shape: Arrow
+      Topic: /amcl_pose
+      Unreliable: false
+      Value: false
+    - Alpha: 1
+      Arrow Length: 0.30000001192092896
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: PoseArray
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /particlecloud
+      Unreliable: false
+      Value: false
+    - Class: rviz/InteractiveMarkers
+      Enable Transparency: true
+      Enabled: false
+      Name: InteractiveMarkers
+      Show Axes: false
+      Show Descriptions: true
+      Show Visual Aids: false
+      Update Topic: /twist_marker_server/update
+      Value: false
+    - Class: rviz/Image
+      Enabled: true
+      Image Topic: /jackal0/front/image_inference
+      Max Value: 1
+      Median window: 5
+      Min Value: 0
+      Name: Image
+      Normalize Range: true
+      Queue Size: 2
+      Transport Hint: raw
+      Unreliable: false
+      Value: true
+    - Circles color: 170; 0; 0
+      Class: Obstacles
+      Enabled: true
+      Margin color: 0; 170; 0
+      Name: Obstacles
+      Opacity: 0.75
+      Segments color: 170; 170; 0
+      Segments thickness: 0.029999999329447746
+      Topic: /jackal0/obstacles
+      Unreliable: false
+      Value: true
+    - Circles color: 244; 229; 6
+      Class: Obstacles
+      Enabled: true
+      Margin color: 0; 170; 0
+      Name: Obstacles
+      Opacity: 0.75
+      Segments color: 170; 170; 0
+      Segments thickness: 0.029999999329447746
+      Topic: /jackal0/raw_obstacles
+      Unreliable: false
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        base_link:
+          Value: true
+        cam0/camera_tf:
+          Value: true
+        cam0_bottom_screw_frame:
+          Value: true
+        cam0_color_frame:
+          Value: true
+        cam0_color_optical_frame:
+          Value: true
+        cam0_depth_frame:
+          Value: true
+        cam0_depth_optical_frame:
+          Value: true
+        cam0_left_ir_frame:
+          Value: true
+        cam0_left_ir_optical_frame:
+          Value: true
+        cam0_link:
+          Value: true
+        cam0_right_ir_frame:
+          Value: true
+        cam0_right_ir_optical_frame:
+          Value: true
+        cam1/camera_tf:
+          Value: true
+        cam1_bottom_screw_frame:
+          Value: true
+        cam1_color_frame:
+          Value: true
+        cam1_color_optical_frame:
+          Value: true
+        cam1_depth_frame:
+          Value: true
+        cam1_depth_optical_frame:
+          Value: true
+        cam1_left_ir_frame:
+          Value: true
+        cam1_left_ir_optical_frame:
+          Value: true
+        cam1_link:
+          Value: true
+        cam1_right_ir_frame:
+          Value: true
+        cam1_right_ir_optical_frame:
+          Value: true
+        cam2/camera_tf:
+          Value: true
+        cam2_bottom_screw_frame:
+          Value: true
+        cam2_color_frame:
+          Value: true
+        cam2_color_optical_frame:
+          Value: true
+        cam2_depth_frame:
+          Value: true
+        cam2_depth_optical_frame:
+          Value: true
+        cam2_left_ir_frame:
+          Value: true
+        cam2_left_ir_optical_frame:
+          Value: true
+        cam2_link:
+          Value: true
+        cam2_right_ir_frame:
+          Value: true
+        cam2_right_ir_optical_frame:
+          Value: true
+        cam3/camera_tf:
+          Value: true
+        cam3_bottom_screw_frame:
+          Value: true
+        cam3_color_frame:
+          Value: true
+        cam3_color_optical_frame:
+          Value: true
+        cam3_depth_frame:
+          Value: true
+        cam3_depth_optical_frame:
+          Value: true
+        cam3_left_ir_frame:
+          Value: true
+        cam3_left_ir_optical_frame:
+          Value: true
+        cam3_link:
+          Value: true
+        cam3_right_ir_frame:
+          Value: true
+        cam3_right_ir_optical_frame:
+          Value: true
+        jackal0/axle_link:
+          Value: true
+        jackal0/back_armor:
+          Value: true
+        jackal0/back_armor_sensor:
+          Value: true
+        jackal0/base_link:
+          Value: true
+        jackal0/camera_visualtag:
+          Value: true
+        jackal0/center_laser:
+          Value: true
+        jackal0/chassis_link:
+          Value: true
+        jackal0/front_armor:
+          Value: true
+        jackal0/front_armor_sensor:
+          Value: true
+        jackal0/front_camera:
+          Value: true
+        jackal0/front_camera_beam:
+          Value: true
+        jackal0/front_camera_mount:
+          Value: true
+        jackal0/front_cover_link:
+          Value: true
+        jackal0/front_left_wheel_link:
+          Value: true
+        jackal0/front_lights_link:
+          Value: true
+        jackal0/front_right_wheel_link:
+          Value: true
+        jackal0/front_rocker_link:
+          Value: true
+        jackal0/ground_truth:
+          Value: true
+        jackal0/ground_truth/axle_link:
+          Value: true
+        jackal0/ground_truth/back_armor_sensor:
+          Value: true
+        jackal0/ground_truth/base_link:
+          Value: true
+        jackal0/ground_truth/camera_visualtag:
+          Value: true
+        jackal0/ground_truth/center_laser:
+          Value: true
+        jackal0/ground_truth/chassis_link:
+          Value: true
+        jackal0/ground_truth/front_armor_sensor:
+          Value: true
+        jackal0/ground_truth/front_camera:
+          Value: true
+        jackal0/ground_truth/front_camera_beam:
+          Value: true
+        jackal0/ground_truth/front_camera_mount:
+          Value: true
+        jackal0/ground_truth/front_cover_link:
+          Value: true
+        jackal0/ground_truth/front_left_wheel_link:
+          Value: true
+        jackal0/ground_truth/front_lights_link:
+          Value: true
+        jackal0/ground_truth/front_right_wheel_link:
+          Value: true
+        jackal0/ground_truth/front_rocker_link:
+          Value: true
+        jackal0/ground_truth/imu_link:
+          Value: true
+        jackal0/ground_truth/jackal0_robot_camera_bottom_screw_frame:
+          Value: true
+        jackal0/ground_truth/jackal0_robot_camera_color_frame:
+          Value: true
+        jackal0/ground_truth/jackal0_robot_camera_color_optical_frame:
+          Value: true
+        jackal0/ground_truth/jackal0_robot_camera_depth_frame:
+          Value: true
+        jackal0/ground_truth/jackal0_robot_camera_depth_optical_frame:
+          Value: true
+        jackal0/ground_truth/jackal0_robot_camera_left_ir_frame:
+          Value: true
+        jackal0/ground_truth/jackal0_robot_camera_left_ir_optical_frame:
+          Value: true
+        jackal0/ground_truth/jackal0_robot_camera_link:
+          Value: true
+        jackal0/ground_truth/jackal0_robot_camera_right_ir_frame:
+          Value: true
+        jackal0/ground_truth/jackal0_robot_camera_right_ir_optical_frame:
+          Value: true
+        jackal0/ground_truth/left_armor_sensor:
+          Value: true
+        jackal0/ground_truth/left_side_cover_link:
+          Value: true
+        jackal0/ground_truth/mid_mount:
+          Value: true
+        jackal0/ground_truth/rear_cover_link:
+          Value: true
+        jackal0/ground_truth/rear_left_wheel_link:
+          Value: true
+        jackal0/ground_truth/rear_lights_link:
+          Value: true
+        jackal0/ground_truth/rear_right_wheel_link:
+          Value: true
+        jackal0/ground_truth/rear_rocker_link:
+          Value: true
+        jackal0/ground_truth/right_armor_sensor:
+          Value: true
+        jackal0/ground_truth/right_side_cover_link:
+          Value: true
+        jackal0/ground_truth/top_link:
+          Value: true
+        jackal0/imu_link:
+          Value: true
+        jackal0/jackal0_robot_camera_bottom_screw_frame:
+          Value: true
+        jackal0/jackal0_robot_camera_color_frame:
+          Value: true
+        jackal0/jackal0_robot_camera_color_optical_frame:
+          Value: true
+        jackal0/jackal0_robot_camera_depth_frame:
+          Value: true
+        jackal0/jackal0_robot_camera_depth_optical_frame:
+          Value: true
+        jackal0/jackal0_robot_camera_left_ir_frame:
+          Value: true
+        jackal0/jackal0_robot_camera_left_ir_optical_frame:
+          Value: true
+        jackal0/jackal0_robot_camera_link:
+          Value: true
+        jackal0/jackal0_robot_camera_right_ir_frame:
+          Value: true
+        jackal0/jackal0_robot_camera_right_ir_optical_frame:
+          Value: true
+        jackal0/left_armor:
+          Value: true
+        jackal0/left_armor_sensor:
+          Value: true
+        jackal0/left_side_cover_link:
+          Value: true
+        jackal0/mid_mount:
+          Value: true
+        jackal0/odom:
+          Value: true
+        jackal0/rear_cover_link:
+          Value: true
+        jackal0/rear_left_wheel_link:
+          Value: true
+        jackal0/rear_lights_link:
+          Value: true
+        jackal0/rear_right_wheel_link:
+          Value: true
+        jackal0/rear_rocker_link:
+          Value: true
+        jackal0/right_armor:
+          Value: true
+        jackal0/right_armor_sensor:
+          Value: true
+        jackal0/right_side_cover_link:
+          Value: true
+        jackal0/top_link:
+          Value: true
+        jackal1/axle_link:
+          Value: true
+        jackal1/back_armor:
+          Value: true
+        jackal1/back_armor_sensor:
+          Value: true
+        jackal1/base_link:
+          Value: true
+        jackal1/camera_visualtag:
+          Value: true
+        jackal1/center_laser:
+          Value: true
+        jackal1/chassis_link:
+          Value: true
+        jackal1/front_armor:
+          Value: true
+        jackal1/front_armor_sensor:
+          Value: true
+        jackal1/front_camera:
+          Value: true
+        jackal1/front_camera_beam:
+          Value: true
+        jackal1/front_camera_mount:
+          Value: true
+        jackal1/front_cover_link:
+          Value: true
+        jackal1/front_left_wheel_link:
+          Value: true
+        jackal1/front_lights_link:
+          Value: true
+        jackal1/front_right_wheel_link:
+          Value: true
+        jackal1/front_rocker_link:
+          Value: true
+        jackal1/ground_truth:
+          Value: true
+        jackal1/ground_truth/axle_link:
+          Value: true
+        jackal1/ground_truth/back_armor_sensor:
+          Value: true
+        jackal1/ground_truth/base_link:
+          Value: true
+        jackal1/ground_truth/camera_visualtag:
+          Value: true
+        jackal1/ground_truth/center_laser:
+          Value: true
+        jackal1/ground_truth/chassis_link:
+          Value: true
+        jackal1/ground_truth/front_armor_sensor:
+          Value: true
+        jackal1/ground_truth/front_camera:
+          Value: true
+        jackal1/ground_truth/front_camera_beam:
+          Value: true
+        jackal1/ground_truth/front_camera_mount:
+          Value: true
+        jackal1/ground_truth/front_cover_link:
+          Value: true
+        jackal1/ground_truth/front_left_wheel_link:
+          Value: true
+        jackal1/ground_truth/front_lights_link:
+          Value: true
+        jackal1/ground_truth/front_right_wheel_link:
+          Value: true
+        jackal1/ground_truth/front_rocker_link:
+          Value: true
+        jackal1/ground_truth/imu_link:
+          Value: true
+        jackal1/ground_truth/jackal1_robot_camera_bottom_screw_frame:
+          Value: true
+        jackal1/ground_truth/jackal1_robot_camera_color_frame:
+          Value: true
+        jackal1/ground_truth/jackal1_robot_camera_color_optical_frame:
+          Value: true
+        jackal1/ground_truth/jackal1_robot_camera_depth_frame:
+          Value: true
+        jackal1/ground_truth/jackal1_robot_camera_depth_optical_frame:
+          Value: true
+        jackal1/ground_truth/jackal1_robot_camera_left_ir_frame:
+          Value: true
+        jackal1/ground_truth/jackal1_robot_camera_left_ir_optical_frame:
+          Value: true
+        jackal1/ground_truth/jackal1_robot_camera_link:
+          Value: true
+        jackal1/ground_truth/jackal1_robot_camera_right_ir_frame:
+          Value: true
+        jackal1/ground_truth/jackal1_robot_camera_right_ir_optical_frame:
+          Value: true
+        jackal1/ground_truth/left_armor_sensor:
+          Value: true
+        jackal1/ground_truth/left_side_cover_link:
+          Value: true
+        jackal1/ground_truth/mid_mount:
+          Value: true
+        jackal1/ground_truth/rear_cover_link:
+          Value: true
+        jackal1/ground_truth/rear_left_wheel_link:
+          Value: true
+        jackal1/ground_truth/rear_lights_link:
+          Value: true
+        jackal1/ground_truth/rear_right_wheel_link:
+          Value: true
+        jackal1/ground_truth/rear_rocker_link:
+          Value: true
+        jackal1/ground_truth/right_armor_sensor:
+          Value: true
+        jackal1/ground_truth/right_side_cover_link:
+          Value: true
+        jackal1/ground_truth/top_link:
+          Value: true
+        jackal1/imu_link:
+          Value: true
+        jackal1/jackal1_robot_camera_bottom_screw_frame:
+          Value: true
+        jackal1/jackal1_robot_camera_color_frame:
+          Value: true
+        jackal1/jackal1_robot_camera_color_optical_frame:
+          Value: true
+        jackal1/jackal1_robot_camera_depth_frame:
+          Value: true
+        jackal1/jackal1_robot_camera_depth_optical_frame:
+          Value: true
+        jackal1/jackal1_robot_camera_left_ir_frame:
+          Value: true
+        jackal1/jackal1_robot_camera_left_ir_optical_frame:
+          Value: true
+        jackal1/jackal1_robot_camera_link:
+          Value: true
+        jackal1/jackal1_robot_camera_right_ir_frame:
+          Value: true
+        jackal1/jackal1_robot_camera_right_ir_optical_frame:
+          Value: true
+        jackal1/left_armor:
+          Value: true
+        jackal1/left_armor_sensor:
+          Value: true
+        jackal1/left_side_cover_link:
+          Value: true
+        jackal1/mid_mount:
+          Value: true
+        jackal1/odom:
+          Value: true
+        jackal1/rear_cover_link:
+          Value: true
+        jackal1/rear_left_wheel_link:
+          Value: true
+        jackal1/rear_lights_link:
+          Value: true
+        jackal1/rear_right_wheel_link:
+          Value: true
+        jackal1/rear_rocker_link:
+          Value: true
+        jackal1/right_armor:
+          Value: true
+        jackal1/right_armor_sensor:
+          Value: true
+        jackal1/right_side_cover_link:
+          Value: true
+        jackal1/top_link:
+          Value: true
+        jackal2/axle_link:
+          Value: true
+        jackal2/back_armor:
+          Value: true
+        jackal2/back_armor_sensor:
+          Value: true
+        jackal2/base_link:
+          Value: true
+        jackal2/camera_visualtag:
+          Value: true
+        jackal2/center_laser:
+          Value: true
+        jackal2/chassis_link:
+          Value: true
+        jackal2/front_armor:
+          Value: true
+        jackal2/front_armor_sensor:
+          Value: true
+        jackal2/front_camera:
+          Value: true
+        jackal2/front_camera_beam:
+          Value: true
+        jackal2/front_camera_mount:
+          Value: true
+        jackal2/front_cover_link:
+          Value: true
+        jackal2/front_left_wheel_link:
+          Value: true
+        jackal2/front_lights_link:
+          Value: true
+        jackal2/front_right_wheel_link:
+          Value: true
+        jackal2/front_rocker_link:
+          Value: true
+        jackal2/ground_truth:
+          Value: true
+        jackal2/ground_truth/axle_link:
+          Value: true
+        jackal2/ground_truth/back_armor_sensor:
+          Value: true
+        jackal2/ground_truth/base_link:
+          Value: true
+        jackal2/ground_truth/camera_visualtag:
+          Value: true
+        jackal2/ground_truth/center_laser:
+          Value: true
+        jackal2/ground_truth/chassis_link:
+          Value: true
+        jackal2/ground_truth/front_armor_sensor:
+          Value: true
+        jackal2/ground_truth/front_camera:
+          Value: true
+        jackal2/ground_truth/front_camera_beam:
+          Value: true
+        jackal2/ground_truth/front_camera_mount:
+          Value: true
+        jackal2/ground_truth/front_cover_link:
+          Value: true
+        jackal2/ground_truth/front_left_wheel_link:
+          Value: true
+        jackal2/ground_truth/front_lights_link:
+          Value: true
+        jackal2/ground_truth/front_right_wheel_link:
+          Value: true
+        jackal2/ground_truth/front_rocker_link:
+          Value: true
+        jackal2/ground_truth/imu_link:
+          Value: true
+        jackal2/ground_truth/jackal2_robot_camera_bottom_screw_frame:
+          Value: true
+        jackal2/ground_truth/jackal2_robot_camera_color_frame:
+          Value: true
+        jackal2/ground_truth/jackal2_robot_camera_color_optical_frame:
+          Value: true
+        jackal2/ground_truth/jackal2_robot_camera_depth_frame:
+          Value: true
+        jackal2/ground_truth/jackal2_robot_camera_depth_optical_frame:
+          Value: true
+        jackal2/ground_truth/jackal2_robot_camera_left_ir_frame:
+          Value: true
+        jackal2/ground_truth/jackal2_robot_camera_left_ir_optical_frame:
+          Value: true
+        jackal2/ground_truth/jackal2_robot_camera_link:
+          Value: true
+        jackal2/ground_truth/jackal2_robot_camera_right_ir_frame:
+          Value: true
+        jackal2/ground_truth/jackal2_robot_camera_right_ir_optical_frame:
+          Value: true
+        jackal2/ground_truth/left_armor_sensor:
+          Value: true
+        jackal2/ground_truth/left_side_cover_link:
+          Value: true
+        jackal2/ground_truth/mid_mount:
+          Value: true
+        jackal2/ground_truth/rear_cover_link:
+          Value: true
+        jackal2/ground_truth/rear_left_wheel_link:
+          Value: true
+        jackal2/ground_truth/rear_lights_link:
+          Value: true
+        jackal2/ground_truth/rear_right_wheel_link:
+          Value: true
+        jackal2/ground_truth/rear_rocker_link:
+          Value: true
+        jackal2/ground_truth/right_armor_sensor:
+          Value: true
+        jackal2/ground_truth/right_side_cover_link:
+          Value: true
+        jackal2/ground_truth/top_link:
+          Value: true
+        jackal2/imu_link:
+          Value: true
+        jackal2/jackal2_robot_camera_bottom_screw_frame:
+          Value: true
+        jackal2/jackal2_robot_camera_color_frame:
+          Value: true
+        jackal2/jackal2_robot_camera_color_optical_frame:
+          Value: true
+        jackal2/jackal2_robot_camera_depth_frame:
+          Value: true
+        jackal2/jackal2_robot_camera_depth_optical_frame:
+          Value: true
+        jackal2/jackal2_robot_camera_left_ir_frame:
+          Value: true
+        jackal2/jackal2_robot_camera_left_ir_optical_frame:
+          Value: true
+        jackal2/jackal2_robot_camera_link:
+          Value: true
+        jackal2/jackal2_robot_camera_right_ir_frame:
+          Value: true
+        jackal2/jackal2_robot_camera_right_ir_optical_frame:
+          Value: true
+        jackal2/left_armor:
+          Value: true
+        jackal2/left_armor_sensor:
+          Value: true
+        jackal2/left_side_cover_link:
+          Value: true
+        jackal2/mid_mount:
+          Value: true
+        jackal2/odom:
+          Value: true
+        jackal2/rear_cover_link:
+          Value: true
+        jackal2/rear_left_wheel_link:
+          Value: true
+        jackal2/rear_lights_link:
+          Value: true
+        jackal2/rear_right_wheel_link:
+          Value: true
+        jackal2/rear_rocker_link:
+          Value: true
+        jackal2/right_armor:
+          Value: true
+        jackal2/right_armor_sensor:
+          Value: true
+        jackal2/right_side_cover_link:
+          Value: true
+        jackal2/top_link:
+          Value: true
+        jackal3/axle_link:
+          Value: true
+        jackal3/back_armor:
+          Value: true
+        jackal3/back_armor_sensor:
+          Value: true
+        jackal3/base_link:
+          Value: true
+        jackal3/camera_visualtag:
+          Value: true
+        jackal3/center_laser:
+          Value: true
+        jackal3/chassis_link:
+          Value: true
+        jackal3/front_armor:
+          Value: true
+        jackal3/front_armor_sensor:
+          Value: true
+        jackal3/front_camera:
+          Value: true
+        jackal3/front_camera_beam:
+          Value: true
+        jackal3/front_camera_mount:
+          Value: true
+        jackal3/front_cover_link:
+          Value: true
+        jackal3/front_left_wheel_link:
+          Value: true
+        jackal3/front_lights_link:
+          Value: true
+        jackal3/front_right_wheel_link:
+          Value: true
+        jackal3/front_rocker_link:
+          Value: true
+        jackal3/ground_truth:
+          Value: true
+        jackal3/ground_truth/axle_link:
+          Value: true
+        jackal3/ground_truth/back_armor_sensor:
+          Value: true
+        jackal3/ground_truth/base_link:
+          Value: true
+        jackal3/ground_truth/camera_visualtag:
+          Value: true
+        jackal3/ground_truth/center_laser:
+          Value: true
+        jackal3/ground_truth/chassis_link:
+          Value: true
+        jackal3/ground_truth/front_armor_sensor:
+          Value: true
+        jackal3/ground_truth/front_camera:
+          Value: true
+        jackal3/ground_truth/front_camera_beam:
+          Value: true
+        jackal3/ground_truth/front_camera_mount:
+          Value: true
+        jackal3/ground_truth/front_cover_link:
+          Value: true
+        jackal3/ground_truth/front_left_wheel_link:
+          Value: true
+        jackal3/ground_truth/front_lights_link:
+          Value: true
+        jackal3/ground_truth/front_right_wheel_link:
+          Value: true
+        jackal3/ground_truth/front_rocker_link:
+          Value: true
+        jackal3/ground_truth/imu_link:
+          Value: true
+        jackal3/ground_truth/jackal3_robot_camera_bottom_screw_frame:
+          Value: true
+        jackal3/ground_truth/jackal3_robot_camera_color_frame:
+          Value: true
+        jackal3/ground_truth/jackal3_robot_camera_color_optical_frame:
+          Value: true
+        jackal3/ground_truth/jackal3_robot_camera_depth_frame:
+          Value: true
+        jackal3/ground_truth/jackal3_robot_camera_depth_optical_frame:
+          Value: true
+        jackal3/ground_truth/jackal3_robot_camera_left_ir_frame:
+          Value: true
+        jackal3/ground_truth/jackal3_robot_camera_left_ir_optical_frame:
+          Value: true
+        jackal3/ground_truth/jackal3_robot_camera_link:
+          Value: true
+        jackal3/ground_truth/jackal3_robot_camera_right_ir_frame:
+          Value: true
+        jackal3/ground_truth/jackal3_robot_camera_right_ir_optical_frame:
+          Value: true
+        jackal3/ground_truth/left_armor_sensor:
+          Value: true
+        jackal3/ground_truth/left_side_cover_link:
+          Value: true
+        jackal3/ground_truth/mid_mount:
+          Value: true
+        jackal3/ground_truth/rear_cover_link:
+          Value: true
+        jackal3/ground_truth/rear_left_wheel_link:
+          Value: true
+        jackal3/ground_truth/rear_lights_link:
+          Value: true
+        jackal3/ground_truth/rear_right_wheel_link:
+          Value: true
+        jackal3/ground_truth/rear_rocker_link:
+          Value: true
+        jackal3/ground_truth/right_armor_sensor:
+          Value: true
+        jackal3/ground_truth/right_side_cover_link:
+          Value: true
+        jackal3/ground_truth/top_link:
+          Value: true
+        jackal3/imu_link:
+          Value: true
+        jackal3/jackal3_robot_camera_bottom_screw_frame:
+          Value: true
+        jackal3/jackal3_robot_camera_color_frame:
+          Value: true
+        jackal3/jackal3_robot_camera_color_optical_frame:
+          Value: true
+        jackal3/jackal3_robot_camera_depth_frame:
+          Value: true
+        jackal3/jackal3_robot_camera_depth_optical_frame:
+          Value: true
+        jackal3/jackal3_robot_camera_left_ir_frame:
+          Value: true
+        jackal3/jackal3_robot_camera_left_ir_optical_frame:
+          Value: true
+        jackal3/jackal3_robot_camera_link:
+          Value: true
+        jackal3/jackal3_robot_camera_right_ir_frame:
+          Value: true
+        jackal3/jackal3_robot_camera_right_ir_optical_frame:
+          Value: true
+        jackal3/left_armor:
+          Value: true
+        jackal3/left_armor_sensor:
+          Value: true
+        jackal3/left_side_cover_link:
+          Value: true
+        jackal3/mid_mount:
+          Value: true
+        jackal3/odom:
+          Value: true
+        jackal3/rear_cover_link:
+          Value: true
+        jackal3/rear_left_wheel_link:
+          Value: true
+        jackal3/rear_lights_link:
+          Value: true
+        jackal3/rear_right_wheel_link:
+          Value: true
+        jackal3/rear_rocker_link:
+          Value: true
+        jackal3/right_armor:
+          Value: true
+        jackal3/right_armor_sensor:
+          Value: true
+        jackal3/right_side_cover_link:
+          Value: true
+        jackal3/top_link:
+          Value: true
+        map:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        map:
+          cam0/camera_tf:
+            {}
+          cam1/camera_tf:
+            {}
+          cam2/camera_tf:
+            {}
+          cam3/camera_tf:
+            {}
+          jackal0/ground_truth:
+            jackal0/back_armor:
+              {}
+            jackal0/front_armor:
+              {}
+            jackal0/ground_truth/base_link:
+              jackal0/ground_truth/back_armor_sensor:
+                {}
+              jackal0/ground_truth/chassis_link:
+                jackal0/ground_truth/axle_link:
+                  jackal0/ground_truth/front_rocker_link:
+                    jackal0/ground_truth/front_left_wheel_link:
+                      {}
+                    jackal0/ground_truth/front_right_wheel_link:
+                      {}
+                  jackal0/ground_truth/rear_rocker_link:
+                    jackal0/ground_truth/rear_left_wheel_link:
+                      {}
+                    jackal0/ground_truth/rear_right_wheel_link:
+                      {}
+                jackal0/ground_truth/center_laser:
+                  {}
+                jackal0/ground_truth/front_cover_link:
+                  jackal0/ground_truth/front_camera_mount:
+                    jackal0/ground_truth/front_camera_beam:
+                      jackal0/ground_truth/front_camera:
+                        jackal0/ground_truth/camera_visualtag:
+                          {}
+                        jackal0/ground_truth/jackal0_robot_camera_bottom_screw_frame:
+                          jackal0/ground_truth/jackal0_robot_camera_link:
+                            jackal0/ground_truth/jackal0_robot_camera_depth_frame:
+                              jackal0/ground_truth/jackal0_robot_camera_color_frame:
+                                jackal0/ground_truth/jackal0_robot_camera_color_optical_frame:
+                                  {}
+                              jackal0/ground_truth/jackal0_robot_camera_depth_optical_frame:
+                                {}
+                              jackal0/ground_truth/jackal0_robot_camera_left_ir_frame:
+                                jackal0/ground_truth/jackal0_robot_camera_left_ir_optical_frame:
+                                  {}
+                              jackal0/ground_truth/jackal0_robot_camera_right_ir_frame:
+                                jackal0/ground_truth/jackal0_robot_camera_right_ir_optical_frame:
+                                  {}
+                jackal0/ground_truth/front_lights_link:
+                  {}
+                jackal0/ground_truth/imu_link:
+                  {}
+                jackal0/ground_truth/left_side_cover_link:
+                  {}
+                jackal0/ground_truth/rear_cover_link:
+                  {}
+                jackal0/ground_truth/rear_lights_link:
+                  {}
+                jackal0/ground_truth/right_side_cover_link:
+                  {}
+                jackal0/ground_truth/top_link:
+                  {}
+              jackal0/ground_truth/front_armor_sensor:
+                {}
+              jackal0/ground_truth/left_armor_sensor:
+                {}
+              jackal0/ground_truth/mid_mount:
+                {}
+              jackal0/ground_truth/right_armor_sensor:
+                {}
+            jackal0/left_armor:
+              {}
+            jackal0/right_armor:
+              {}
+          jackal0/odom:
+            jackal0/base_link:
+              jackal0/back_armor_sensor:
+                {}
+              jackal0/chassis_link:
+                jackal0/axle_link:
+                  jackal0/front_rocker_link:
+                    jackal0/front_left_wheel_link:
+                      {}
+                    jackal0/front_right_wheel_link:
+                      {}
+                  jackal0/rear_rocker_link:
+                    jackal0/rear_left_wheel_link:
+                      {}
+                    jackal0/rear_right_wheel_link:
+                      {}
+                jackal0/center_laser:
+                  {}
+                jackal0/front_cover_link:
+                  jackal0/front_camera_mount:
+                    jackal0/front_camera_beam:
+                      jackal0/front_camera:
+                        jackal0/camera_visualtag:
+                          {}
+                        jackal0/jackal0_robot_camera_bottom_screw_frame:
+                          jackal0/jackal0_robot_camera_link:
+                            jackal0/jackal0_robot_camera_depth_frame:
+                              jackal0/jackal0_robot_camera_color_frame:
+                                jackal0/jackal0_robot_camera_color_optical_frame:
+                                  {}
+                              jackal0/jackal0_robot_camera_depth_optical_frame:
+                                {}
+                              jackal0/jackal0_robot_camera_left_ir_frame:
+                                jackal0/jackal0_robot_camera_left_ir_optical_frame:
+                                  {}
+                              jackal0/jackal0_robot_camera_right_ir_frame:
+                                jackal0/jackal0_robot_camera_right_ir_optical_frame:
+                                  {}
+                jackal0/front_lights_link:
+                  {}
+                jackal0/imu_link:
+                  {}
+                jackal0/left_side_cover_link:
+                  {}
+                jackal0/rear_cover_link:
+                  {}
+                jackal0/rear_lights_link:
+                  {}
+                jackal0/right_side_cover_link:
+                  {}
+                jackal0/top_link:
+                  {}
+              jackal0/front_armor_sensor:
+                {}
+              jackal0/left_armor_sensor:
+                {}
+              jackal0/mid_mount:
+                {}
+              jackal0/right_armor_sensor:
+                {}
+          jackal1/ground_truth:
+            jackal1/back_armor:
+              {}
+            jackal1/front_armor:
+              {}
+            jackal1/ground_truth/base_link:
+              jackal1/ground_truth/back_armor_sensor:
+                {}
+              jackal1/ground_truth/chassis_link:
+                jackal1/ground_truth/axle_link:
+                  jackal1/ground_truth/front_rocker_link:
+                    jackal1/ground_truth/front_left_wheel_link:
+                      {}
+                    jackal1/ground_truth/front_right_wheel_link:
+                      {}
+                  jackal1/ground_truth/rear_rocker_link:
+                    jackal1/ground_truth/rear_left_wheel_link:
+                      {}
+                    jackal1/ground_truth/rear_right_wheel_link:
+                      {}
+                jackal1/ground_truth/center_laser:
+                  {}
+                jackal1/ground_truth/front_cover_link:
+                  jackal1/ground_truth/front_camera_mount:
+                    jackal1/ground_truth/front_camera_beam:
+                      jackal1/ground_truth/front_camera:
+                        jackal1/ground_truth/camera_visualtag:
+                          {}
+                        jackal1/ground_truth/jackal1_robot_camera_bottom_screw_frame:
+                          jackal1/ground_truth/jackal1_robot_camera_link:
+                            jackal1/ground_truth/jackal1_robot_camera_depth_frame:
+                              jackal1/ground_truth/jackal1_robot_camera_color_frame:
+                                jackal1/ground_truth/jackal1_robot_camera_color_optical_frame:
+                                  {}
+                              jackal1/ground_truth/jackal1_robot_camera_depth_optical_frame:
+                                {}
+                              jackal1/ground_truth/jackal1_robot_camera_left_ir_frame:
+                                jackal1/ground_truth/jackal1_robot_camera_left_ir_optical_frame:
+                                  {}
+                              jackal1/ground_truth/jackal1_robot_camera_right_ir_frame:
+                                jackal1/ground_truth/jackal1_robot_camera_right_ir_optical_frame:
+                                  {}
+                jackal1/ground_truth/front_lights_link:
+                  {}
+                jackal1/ground_truth/imu_link:
+                  {}
+                jackal1/ground_truth/left_side_cover_link:
+                  {}
+                jackal1/ground_truth/rear_cover_link:
+                  {}
+                jackal1/ground_truth/rear_lights_link:
+                  {}
+                jackal1/ground_truth/right_side_cover_link:
+                  {}
+                jackal1/ground_truth/top_link:
+                  {}
+              jackal1/ground_truth/front_armor_sensor:
+                {}
+              jackal1/ground_truth/left_armor_sensor:
+                {}
+              jackal1/ground_truth/mid_mount:
+                {}
+              jackal1/ground_truth/right_armor_sensor:
+                {}
+            jackal1/left_armor:
+              {}
+            jackal1/right_armor:
+              {}
+          jackal1/odom:
+            jackal1/base_link:
+              jackal1/back_armor_sensor:
+                {}
+              jackal1/chassis_link:
+                jackal1/axle_link:
+                  jackal1/front_rocker_link:
+                    jackal1/front_left_wheel_link:
+                      {}
+                    jackal1/front_right_wheel_link:
+                      {}
+                  jackal1/rear_rocker_link:
+                    jackal1/rear_left_wheel_link:
+                      {}
+                    jackal1/rear_right_wheel_link:
+                      {}
+                jackal1/center_laser:
+                  {}
+                jackal1/front_cover_link:
+                  jackal1/front_camera_mount:
+                    jackal1/front_camera_beam:
+                      jackal1/front_camera:
+                        jackal1/camera_visualtag:
+                          {}
+                        jackal1/jackal1_robot_camera_bottom_screw_frame:
+                          jackal1/jackal1_robot_camera_link:
+                            jackal1/jackal1_robot_camera_depth_frame:
+                              jackal1/jackal1_robot_camera_color_frame:
+                                jackal1/jackal1_robot_camera_color_optical_frame:
+                                  {}
+                              jackal1/jackal1_robot_camera_depth_optical_frame:
+                                {}
+                              jackal1/jackal1_robot_camera_left_ir_frame:
+                                jackal1/jackal1_robot_camera_left_ir_optical_frame:
+                                  {}
+                              jackal1/jackal1_robot_camera_right_ir_frame:
+                                jackal1/jackal1_robot_camera_right_ir_optical_frame:
+                                  {}
+                jackal1/front_lights_link:
+                  {}
+                jackal1/imu_link:
+                  {}
+                jackal1/left_side_cover_link:
+                  {}
+                jackal1/rear_cover_link:
+                  {}
+                jackal1/rear_lights_link:
+                  {}
+                jackal1/right_side_cover_link:
+                  {}
+                jackal1/top_link:
+                  {}
+              jackal1/front_armor_sensor:
+                {}
+              jackal1/left_armor_sensor:
+                {}
+              jackal1/mid_mount:
+                {}
+              jackal1/right_armor_sensor:
+                {}
+          jackal2/ground_truth:
+            jackal2/back_armor:
+              {}
+            jackal2/front_armor:
+              {}
+            jackal2/ground_truth/base_link:
+              jackal2/ground_truth/back_armor_sensor:
+                {}
+              jackal2/ground_truth/chassis_link:
+                jackal2/ground_truth/axle_link:
+                  jackal2/ground_truth/front_rocker_link:
+                    jackal2/ground_truth/front_left_wheel_link:
+                      {}
+                    jackal2/ground_truth/front_right_wheel_link:
+                      {}
+                  jackal2/ground_truth/rear_rocker_link:
+                    jackal2/ground_truth/rear_left_wheel_link:
+                      {}
+                    jackal2/ground_truth/rear_right_wheel_link:
+                      {}
+                jackal2/ground_truth/center_laser:
+                  {}
+                jackal2/ground_truth/front_cover_link:
+                  jackal2/ground_truth/front_camera_mount:
+                    jackal2/ground_truth/front_camera_beam:
+                      jackal2/ground_truth/front_camera:
+                        jackal2/ground_truth/camera_visualtag:
+                          {}
+                        jackal2/ground_truth/jackal2_robot_camera_bottom_screw_frame:
+                          jackal2/ground_truth/jackal2_robot_camera_link:
+                            jackal2/ground_truth/jackal2_robot_camera_depth_frame:
+                              jackal2/ground_truth/jackal2_robot_camera_color_frame:
+                                jackal2/ground_truth/jackal2_robot_camera_color_optical_frame:
+                                  {}
+                              jackal2/ground_truth/jackal2_robot_camera_depth_optical_frame:
+                                {}
+                              jackal2/ground_truth/jackal2_robot_camera_left_ir_frame:
+                                jackal2/ground_truth/jackal2_robot_camera_left_ir_optical_frame:
+                                  {}
+                              jackal2/ground_truth/jackal2_robot_camera_right_ir_frame:
+                                jackal2/ground_truth/jackal2_robot_camera_right_ir_optical_frame:
+                                  {}
+                jackal2/ground_truth/front_lights_link:
+                  {}
+                jackal2/ground_truth/imu_link:
+                  {}
+                jackal2/ground_truth/left_side_cover_link:
+                  {}
+                jackal2/ground_truth/rear_cover_link:
+                  {}
+                jackal2/ground_truth/rear_lights_link:
+                  {}
+                jackal2/ground_truth/right_side_cover_link:
+                  {}
+                jackal2/ground_truth/top_link:
+                  {}
+              jackal2/ground_truth/front_armor_sensor:
+                {}
+              jackal2/ground_truth/left_armor_sensor:
+                {}
+              jackal2/ground_truth/mid_mount:
+                {}
+              jackal2/ground_truth/right_armor_sensor:
+                {}
+            jackal2/left_armor:
+              {}
+            jackal2/right_armor:
+              {}
+          jackal2/odom:
+            jackal2/base_link:
+              jackal2/back_armor_sensor:
+                {}
+              jackal2/chassis_link:
+                jackal2/axle_link:
+                  jackal2/front_rocker_link:
+                    jackal2/front_left_wheel_link:
+                      {}
+                    jackal2/front_right_wheel_link:
+                      {}
+                  jackal2/rear_rocker_link:
+                    jackal2/rear_left_wheel_link:
+                      {}
+                    jackal2/rear_right_wheel_link:
+                      {}
+                jackal2/center_laser:
+                  {}
+                jackal2/front_cover_link:
+                  jackal2/front_camera_mount:
+                    jackal2/front_camera_beam:
+                      jackal2/front_camera:
+                        jackal2/camera_visualtag:
+                          {}
+                        jackal2/jackal2_robot_camera_bottom_screw_frame:
+                          jackal2/jackal2_robot_camera_link:
+                            jackal2/jackal2_robot_camera_depth_frame:
+                              jackal2/jackal2_robot_camera_color_frame:
+                                jackal2/jackal2_robot_camera_color_optical_frame:
+                                  {}
+                              jackal2/jackal2_robot_camera_depth_optical_frame:
+                                {}
+                              jackal2/jackal2_robot_camera_left_ir_frame:
+                                jackal2/jackal2_robot_camera_left_ir_optical_frame:
+                                  {}
+                              jackal2/jackal2_robot_camera_right_ir_frame:
+                                jackal2/jackal2_robot_camera_right_ir_optical_frame:
+                                  {}
+                jackal2/front_lights_link:
+                  {}
+                jackal2/imu_link:
+                  {}
+                jackal2/left_side_cover_link:
+                  {}
+                jackal2/rear_cover_link:
+                  {}
+                jackal2/rear_lights_link:
+                  {}
+                jackal2/right_side_cover_link:
+                  {}
+                jackal2/top_link:
+                  {}
+              jackal2/front_armor_sensor:
+                {}
+              jackal2/left_armor_sensor:
+                {}
+              jackal2/mid_mount:
+                {}
+              jackal2/right_armor_sensor:
+                {}
+          jackal3/ground_truth:
+            jackal3/back_armor:
+              {}
+            jackal3/front_armor:
+              {}
+            jackal3/ground_truth/base_link:
+              jackal3/ground_truth/back_armor_sensor:
+                {}
+              jackal3/ground_truth/chassis_link:
+                jackal3/ground_truth/axle_link:
+                  jackal3/ground_truth/front_rocker_link:
+                    jackal3/ground_truth/front_left_wheel_link:
+                      {}
+                    jackal3/ground_truth/front_right_wheel_link:
+                      {}
+                  jackal3/ground_truth/rear_rocker_link:
+                    jackal3/ground_truth/rear_left_wheel_link:
+                      {}
+                    jackal3/ground_truth/rear_right_wheel_link:
+                      {}
+                jackal3/ground_truth/center_laser:
+                  {}
+                jackal3/ground_truth/front_cover_link:
+                  jackal3/ground_truth/front_camera_mount:
+                    jackal3/ground_truth/front_camera_beam:
+                      jackal3/ground_truth/front_camera:
+                        jackal3/ground_truth/camera_visualtag:
+                          {}
+                        jackal3/ground_truth/jackal3_robot_camera_bottom_screw_frame:
+                          jackal3/ground_truth/jackal3_robot_camera_link:
+                            jackal3/ground_truth/jackal3_robot_camera_depth_frame:
+                              jackal3/ground_truth/jackal3_robot_camera_color_frame:
+                                jackal3/ground_truth/jackal3_robot_camera_color_optical_frame:
+                                  {}
+                              jackal3/ground_truth/jackal3_robot_camera_depth_optical_frame:
+                                {}
+                              jackal3/ground_truth/jackal3_robot_camera_left_ir_frame:
+                                jackal3/ground_truth/jackal3_robot_camera_left_ir_optical_frame:
+                                  {}
+                              jackal3/ground_truth/jackal3_robot_camera_right_ir_frame:
+                                jackal3/ground_truth/jackal3_robot_camera_right_ir_optical_frame:
+                                  {}
+                jackal3/ground_truth/front_lights_link:
+                  {}
+                jackal3/ground_truth/imu_link:
+                  {}
+                jackal3/ground_truth/left_side_cover_link:
+                  {}
+                jackal3/ground_truth/rear_cover_link:
+                  {}
+                jackal3/ground_truth/rear_lights_link:
+                  {}
+                jackal3/ground_truth/right_side_cover_link:
+                  {}
+                jackal3/ground_truth/top_link:
+                  {}
+              jackal3/ground_truth/front_armor_sensor:
+                {}
+              jackal3/ground_truth/left_armor_sensor:
+                {}
+              jackal3/ground_truth/mid_mount:
+                {}
+              jackal3/ground_truth/right_armor_sensor:
+                {}
+            jackal3/left_armor:
+              {}
+            jackal3/right_armor:
+              {}
+          jackal3/odom:
+            jackal3/base_link:
+              jackal3/back_armor_sensor:
+                {}
+              jackal3/chassis_link:
+                jackal3/axle_link:
+                  jackal3/front_rocker_link:
+                    jackal3/front_left_wheel_link:
+                      {}
+                    jackal3/front_right_wheel_link:
+                      {}
+                  jackal3/rear_rocker_link:
+                    jackal3/rear_left_wheel_link:
+                      {}
+                    jackal3/rear_right_wheel_link:
+                      {}
+                jackal3/center_laser:
+                  {}
+                jackal3/front_cover_link:
+                  jackal3/front_camera_mount:
+                    jackal3/front_camera_beam:
+                      jackal3/front_camera:
+                        jackal3/camera_visualtag:
+                          {}
+                        jackal3/jackal3_robot_camera_bottom_screw_frame:
+                          jackal3/jackal3_robot_camera_link:
+                            jackal3/jackal3_robot_camera_depth_frame:
+                              jackal3/jackal3_robot_camera_color_frame:
+                                jackal3/jackal3_robot_camera_color_optical_frame:
+                                  {}
+                              jackal3/jackal3_robot_camera_depth_optical_frame:
+                                {}
+                              jackal3/jackal3_robot_camera_left_ir_frame:
+                                jackal3/jackal3_robot_camera_left_ir_optical_frame:
+                                  {}
+                              jackal3/jackal3_robot_camera_right_ir_frame:
+                                jackal3/jackal3_robot_camera_right_ir_optical_frame:
+                                  {}
+                jackal3/front_lights_link:
+                  {}
+                jackal3/imu_link:
+                  {}
+                jackal3/left_side_cover_link:
+                  {}
+                jackal3/rear_cover_link:
+                  {}
+                jackal3/rear_lights_link:
+                  {}
+                jackal3/right_side_cover_link:
+                  {}
+                jackal3/top_link:
+                  {}
+              jackal3/front_armor_sensor:
+                {}
+              jackal3/left_armor_sensor:
+                {}
+              jackal3/mid_mount:
+                {}
+              jackal3/right_armor_sensor:
+                {}
+      Update Interval: 0
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: map
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
+      Topic: /jackal0/initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
+    - Class: rviz/SetGoal
+      Topic: /jackal0/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 8.797449111938477
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 2.56549334526062
+        Y: 1.539780616760254
+        Z: -0.30915364623069763
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.7747964859008789
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 3.3236217498779297
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1025
+  Hide Left Dock: false
+  Hide Right Dock: false
+  Image:
+    collapsed: false
+  Image1:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000400000000000001d700000363fc020000000efb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d000001bc000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000001a004a00610063006b0061006c0030002d0049006d00610067006500000001de000001e00000000000000000fb0000000c00430061006d00650072006100000002520000009c0000000000000000fb0000000a0049006d00610067006501000001ff000000dc0000001600fffffffb0000000c00430061006d00650072006100000002370000009a0000000000000000fb0000000a0049006d00610067006501000002aa000000f60000000000000000fb0000000a0049006d00610067006501000002120000018e0000000000000000fb0000000c0049006d006100670065003101000002e1000000bf0000001600ffffff000000010000016a00000363fc0200000003fb0000001e0054006f006f006c002000500072006f0070006500720074006900650073010000003d000000a90000005c00fffffffb0000000a0056006900650077007301000000ec000002b4000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b20000000000000000000000020000073f000000a9fc0100000002fb0000001e0054006f006f006c002000500072006f007000650072007400690065007300000000000000073f0000000000000000fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073d0000003efc0100000002fb0000000800540069006d006501000000000000073d000002eb00fffffffb0000000800540069006d00650100000000000004500000000000000000000003f00000036300000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1853
+  X: 67
+  Y: 27

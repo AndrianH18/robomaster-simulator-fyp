@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+
+  <xacro:macro name="camera_mount" params="prefix tilt:=0">
+
+    <link name="${prefix}_camera_mount">
+<!--      <visual>-->
+<!--        <origin xyz="-0.1 -0.25 1" rpy="0 0 1.5707" />-->
+<!--          <origin xyz="0 0 0" rpy="1.5707 0 1.5707" />-->
+<!--        <geometry>-->
+<!--          <mesh filename="package://multi_jackal_description/meshes/camera-bracket.stl" scale="0.001 0.001 0.001" />-->
+<!--            <mesh filename="package://ridgeback_description/meshes/ICRA_gun.STL" scale="0.001 0.001 0.001"/>-->
+<!--        </geometry>-->
+<!--        <material name="dark_grey" />-->
+<!--      </visual>-->
+<!--      <collision>-->
+<!--      <origin xyz="0 0 0" rpy="1.5707 0 1.5707" />-->
+<!--      <geometry>-->
+<!--          <mesh filename="package://multi_jackal_description/meshes/camera-bracket.stl" scale="0.001 0.001 0.001" />-->
+<!--        </geometry>-->
+<!--      </collision>-->
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <mass value="5" />
+        <inertia
+          ixx="1.0" ixy="0.0" ixz="0.0"
+          iyy="1.0" iyz="0.0"
+          izz="1.0" />
+    </inertial>
+    </link>
+
+    <link name="${prefix}_camera_beam">
+<!--      <visual>-->
+<!--        <origin xyz="-0.1 -0.25 1" rpy="1.5707 0 0" />-->
+<!--          <origin xyz="0 0 0" rpy="0 0 1.5707" />-->
+<!--        <geometry>-->
+<!--          <mesh filename="package://multi_jackal_description/meshes/camera-beam.stl" scale="0.001 0.001 0.001" />-->
+<!--          <mesh filename="package://ridgeback_description/meshes/ICRA_gun.STL" scale="0.001 0.001 0.001"/>-->
+<!--        </geometry>-->
+<!--        <material name="dark_grey" />-->
+<!--      </visual>-->
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <mass value="0.001" />
+        <inertia
+          ixx="0.01" ixy="0.0" ixz="0.0"
+          iyy="0.01" iyz="0.0"
+          izz="0.01" />
+     </inertial>
+    </link>
+
+    
+
+    <joint name="${prefix}_camera_pivot_joint" type="revolute">
+<!--      <joint name="${prefix}_camera_pivot_joint" type="fixed">-->
+<!--      <origin xyz="-0.1 -0.25 0.07" rpy="0 0 0" />-->
+        <origin xyz="0.14 0.002 0.008" rpy="0 ${tilt} 0" />
+      <parent link="${prefix}_camera_mount" />
+      <child link="${prefix}_camera_beam" />
+      <!-- this velocity variable determines whether the joint rotates fast or slow -->
+      <limit upper="1.5707" lower="-1.5707" velocity="30" effort="60"/>
+      <axis xyz="0 0 1" />
+    </joint>
+
+    <link name="front_turret">
+     <visual>
+       <origin xyz="0.13 0 0" rpy="0 1.5707 0" />
+       <geometry>
+        <cylinder radius="0.02" length="0.1"/>
+       </geometry>
+       <material name="dark_grey"/>
+     </visual>
+     <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <mass value="0.001" />
+        <inertia
+          ixx="0.01" ixy="0.0" ixz="0.0"
+          iyy="0.01" iyz="0.0"
+          izz="0.01" />
+     </inertial>
+    </link>
+
+    <joint name="front_turret_joint" type="revolute">
+      <origin xyz="0 0 0.128" rpy="0 0 0" />
+      <parent link="front_camera_beam" />
+      <child link="front_turret" />
+      <limit upper="0.8" lower="-0.5" velocity="30" effort="60"/>
+      <axis xyz="0 -1 0" />
+    </joint>
+    <link name="turret_end"/>
+    <joint name="turret_end_joint" type="fixed">
+      <origin xyz="0.26 0 0" rpy="0 0 0" />
+      <parent link="front_turret" />
+      <child link="turret_end" />
+    </joint>
+
+    <transmission name="turret_barrel_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="front_turret_joint">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="turret_barrel_motor">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+    <transmission name="turret_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <joint name="front_camera_pivot_joint">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+      </joint>
+      <actuator name="turret_motor">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+    </transmission>
+
+    <gazebo reference="${prefix}_camera_beam">
+      <material>Gazebo/DarkGrey</material>
+    </gazebo>
+
+    <gazebo reference="${prefix}_camera_mount">
+      <material>Gazebo/DarkGrey</material>
+    </gazebo>
+
+  </xacro:macro>
+
+</robot>
